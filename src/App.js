@@ -1,7 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
-function Logo() {
+const Logo = () => {
   return (
     <header>
       <h1>Welcome to the Pokedex</h1>
@@ -10,11 +9,9 @@ function Logo() {
   )
 }
 
-function BestPokemon() {
-  return (
-    <p>My favourite Pokemon is Squirtle</p>
-  )
-}
+const BestPokemon = () => (
+  <p>My favourite Pokemon is Squirtle</p>
+)
 
 function App() {
   return (
