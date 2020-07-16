@@ -3,12 +3,12 @@ import Logo from './Logo';
 import CaughtPokemon from './CaughtPokemon';
 import BestPokemon from './BestPokemon';
 
-function App() {
+function App(props) {
   return (
     <div>
-      <Logo />
-      <BestPokemon />
-      <CaughtPokemon />
+      <Logo appName="Pokedex" />
+      <BestPokemon abilities={['Anticipation', 'Adaptability', 'Run-Away']} />
+      <CaughtPokemon date={new Date().toLocaleDateString()} />
     </div>
 
   )
