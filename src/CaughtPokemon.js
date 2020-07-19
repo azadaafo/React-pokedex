@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function CaughtPokemon(props) {
-    console.log(props);
-    return <p>Caught 0 Pokemon on {props.date}</p>
+const CaughtPokemon = ({ date }) => {
+    const [totalCaught, setTotalCaught] = useState(0);
+    function Counter() {
+        setTotalCaught(totalCaught + 1);
+    }
+    return (
+        <p>
+            Caught {Counter} Pokemon on {date}
+        </p>
+    )
 }
-
 export default CaughtPokemon;

@@ -1,9 +1,9 @@
 import React from 'react'
 const Logo = (props) => {
 
-    function logWhenClicked() {
-        console.log("it doesn't matter what the message is");
-    }
+    // function logWhenClicked() {
+    //     console.log("it doesn't matter what the message is");
+    // }
 
     console.log(props);
     return (
