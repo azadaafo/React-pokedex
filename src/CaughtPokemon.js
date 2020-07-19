@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 
 const CaughtPokemon = ({ date }) => {
     const [totalCaught, setTotalCaught] = useState(0);
-    function Counter() {
+    function IncrementTotal() {
         setTotalCaught(totalCaught + 1);
     }
     return (
         <p>
-            Caught {Counter} Pokemon on {date}
+            Caught {totalCaught} Pokemon on {date}
+            <button onClick={IncrementTotal}> Increment</button>
         </p>
     )
 }
