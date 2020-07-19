@@ -13,11 +13,10 @@ const BestPokemonFetcher = () => {
             })
     }, []);
 
-    if (!bestPokemon) {
-        return null
-    } else {
-        return <BestPokemon pokemon={bestPokemon} />;
-    }
+    return !bestPokemon
+        ? null
+        : <BestPokemon pokemon={bestPokemon} />;
+
 }
 
 const BestPokemon = ({ pokemon }) => {
